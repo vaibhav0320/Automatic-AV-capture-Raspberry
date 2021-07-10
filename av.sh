@@ -57,7 +57,7 @@ done
 
 /home/pi/Desktop/newaudio.sh $duration> /dev/null 2>&1 & 
 /home/pi/Desktop//stepper.py $camera_rotation $motorduration> /dev/null 2>&1 & 
-echo 'An event is triggred on Raspberry pi in' $(date) | mail -s "Event triggerred on pi" karmadeepsinh0120@gmail.com
+echo 'An event is triggred on Raspberry pi in' $(date) | mail -s "Event triggerred on pi" yourgmail@gmail.com
 sleep $duration
 echo Video file has been created on Desktop
 
