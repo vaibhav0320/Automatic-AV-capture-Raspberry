@@ -32,6 +32,8 @@ entered in the script file as soon the event is triggered. The person gets
 a mail notification which makes him aware of the event taking place. This
 can be employed during the practical application of this model for
 surveillance or accident detection purpose in the future.You can refer the </br>
+
+
 ● Led.py : It detects if led is ON or OFF.The gpio mode is set as
 BCM and pin 14 as input pin.if led is turned ON it calls the
 subprocess av.sh and the loop breaks else it does nothing. </br>
@@ -45,3 +47,7 @@ h264 format to mp4 format and saves the video with date and time. </br>
 ● newaudio.sh:This shell script gives the command to microphone
 to start recording audio for 5 minutes.It creates a cd quality wav
 file and saves the file with date and time </br>
+
+![image](https://user-images.githubusercontent.com/43676325/125163235-dab5c400-e1a9-11eb-96b9-0dd8a4590088.png)
+
+
