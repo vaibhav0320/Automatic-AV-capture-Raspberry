@@ -1,0 +1,54 @@
+NAME
+	starteventdetect - start Capturing audio and video when event an is trigged
+
+SYNOPSIS
+	starteventdetect [-d/-duration] [-fps] [-h/--height] [-w/--width] [-r/--rotation] [-cr/-cam_rotate]
+
+
+DISCRIPTION
+
+	starteventdetect is commnad that initialize GPIO pin 14 to detect high or low signal. If it recives high signal then it triggers Picamera to start video recording, Usb microphone to start audio recording and stepper motor to rotate.
+
+	If no arguments passed then it will capture video for 2 minutes at 30 fps of height 480 and width 640 pixels, audio for 2 minutes and motor rotating about 300 degree. The output will be an h264 raw format video file, a converted MP4 file and a wav audio file with current date and time as its name on Desktop and an E-mail will be sent to specified email id with an image of current event captured by camera.
+
+	In case of wrong arguments the default values will be taken.
+
+OPTION
+
+	-d,--duration
+			Set video and audio duration in seconds to capture. default is 120 seconds.
+	-fps
+			Set frames per second of video. Default is 30.
+	-h,--heigth
+			Set video height in pixels. Default is 480.
+	-w,--width
+			Set video width in pixels. Default is 480.
+	-r,--rotation
+			Angle in degree to rotate the captured video. Default is 270.
+	-cr,--cam_rotate
+			Angle in degree to rotate motor about its axis. Default is 300.		
+
+CONNECTION
+
+	Picamera: Connect Picamera to .
+
+	USB Microphone: Connect usb microphone to usb port on raspberry pi.
+
+	Motor:	In order to rotate stapper motor connect motor with its driver ic and connect its input to GPIO pins 		 of	raspberry as specified below.
+		  	Vcc to 5V of raspberry pi pin 2 
+		  	Gnd to Gnd of raspberry pi pin 6 (GND)
+		  	input1 to GPIO pin 21
+		  	input2 to GPIO pin 20
+	        input3 to GPIO pin 16
+		    input4 to GPIO pin 19
+
+SEE ALSO  		
+	Manual Pages
+		raspivid, arecord, MP4bBox, mail, mpack
+	Python Libraries
+		RPi.GPIO
+BUGS
+	No known bugs.
+
+AUTHORS
+	Group 8	(EL-213)	
