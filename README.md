@@ -1,14 +1,14 @@
 # Automatic-AV-capture-Raspberry
 
 The aim of the project is to record audio and video using the raspberry pi
-module and then store it on memory for later usage.
+module and then store it on memory for later usage. </br>
 We will run the command ‘starteventdetect’ or script file ‘led.py’ by in the
 command prompt. Now when the event is triggered that is when it will
 detect high voltage on GPIO pin 14 the execution of the script file will run
-ahead.
+ahead. </br>
 This event will be triggered manually by switching on the LED in the
 external breadboard circuit. So as the LED lights the module will detect
-high voltage and the execution will run ahead.
+high voltage and the execution will run ahead. </br>
 Then next av.sh script file will run and the stepper motor will start to
 function rotating for the angle of 360° and simultaneously the camera
 fixed on the motor will rotate along with it and capturing the video of the
@@ -19,19 +19,16 @@ the time of the time of recording it using the variable of timestamp in the
 script file. Similarly, we will run another script file for recording the audio
 using USB Microphone for time interval of 5 minutes and store it on the
 external memory again with timestamp and this file will have format of
-wav.
-This completes the operation of our model and the complete code
-execution ends after this. And then we check the output of the execution.
+wav. </br>
+
 That is the video and audio file stored on the desktop. So, this setup
 serves the purpose of surveillance in various areas.
-It is much similar to the concept added to the smart door stopper as
-described by the Professor Den during his guest lecture on the Patent.
 We also added an extra feature to our project by adding few commands
 in code which will send a mail to the person whose email address is
 entered in the script file as soon the event is triggered. The person gets
 a mail notification which makes him aware of the event taking place. This
 can be employed during the practical application of this model for
-surveillance or accident detection purpose in the future.You can refer the </br>
+surveillance or accident detection purpose in the future. </br>
 
 
 ● Led.py : It detects if led is ON or OFF.The gpio mode is set as
