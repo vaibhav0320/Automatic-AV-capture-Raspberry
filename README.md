@@ -1,4 +1,5 @@
 # Automatic-AV-capture-Raspberry
+Refer ProjectManual.txt for information on using commands.
 
 The aim of the project is to record audio and video using the raspberry pi
 module and then store it on memory for later usage. </br>
